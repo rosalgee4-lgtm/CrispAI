@@ -180,6 +180,8 @@ Crisp 插件、Telegram 的准备步骤和数据库表结构都没有改动。�
 | `UPLOAD_RETENTION_DAYS` | 想定期清理 Telegram 发出的旧图片时。默认不清理 |
 | `TELEGRAM_ADMIN_ONLY=true` | 只允许群主/管理员回复客户和操作时。默认群内所有成员都可以 |
 | `CRISP_WEBHOOK_MAX_AGE` | Webhook 时间戳允许的最大时间差，一般不用动 |
+| `MCP_TOKEN` | 要给 Hermes 等 AI 助手开放 MCP 接口时。不填则 `/mcp` 不开放，见「给 AI 助手用的 MCP 接口」 |
+| `MCP_READONLY`、`MCP_AGENT_NAME` | 配合 MCP 使用：只读模式、助手在 Telegram 里显示的名字 |
 
 升级后可见的行为变化：对话历史只保留最近约 40 条；Telegram 里的访问历史只显示最近 8 条；
 同一会话 60 秒内重复加载页面，欢迎语只判断一次。
